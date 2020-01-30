@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Felipe Castro Richter" />
+    <title>Ejercicio 3</title>
+    <style media="screen" type="text/css">
+      html,
+      body,
+      body * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .flag-container {
+        display: inline-block;
+        width: 40%;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+      }
+      .flag {
+        /* display: inline-block; */
+        width: 300px;
+        height: 200px;
+        background-color: crimson;
+        border: 1px solid rgb(185, 185, 185);
+        margin-bottom: 1rem;
+      }
+      .spain {
+        background-color: red;
+      }
+      .spain .h-stripe {
+        height: 50%;
+        background-color: yellow;
+        position: relative;
+        top: 25%;
+      }
+      .denmark {
+        background-color: red;
+      }
+      .denmark > .h-stripe {
+        background-color: #fff;
+        position: relative;
+        top: 45%;
+        height: 1.5rem;
+      }
+      .denmark > .v-stripe {
+        background-color: #fff;
+        position: relative;
+        left: 30%;
+        top: -1.5rem;
+        width: 1.5rem;
+        height: 100%;
+      }
+      .emirates {
+        background-color: red;
+        padding-left: 18%;
+      }
+      .emirates > * {
+        height: 33.3%;
+      }
+      .emirates > .h-stripe-1 {
+        background-color: green;
+      }
+      .emirates > .h-stripe-2 {
+        background-color: white;
+      }
+      .emirates > .h-stripe-3 {
+        background-color: black;
+      }
+      .japan {
+        background-color: white;
+      }
+      .japan > .circle {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        left: calc(50% - 3rem);
+        top: calc(50% - 3rem);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="flag-container">
+        <div class="flag spain">
+          <div class="h-stripe"></div>
+        </div>
+        España
+      </div>
+      <div class="flag-container">
+        <div class="flag denmark">
+          <div class="h-stripe"></div>
+          <div class="v-stripe"></div>
+        </div>
+        Dinamarca
+      </div>
+      <div class="flag-container">
+        <div class="flag emirates">
+          <div class="h-stripe-1"></div>
+          <div class="h-stripe-2"></div>
+          <div class="h-stripe-3"></div>
+        </div>
+        Emiratos Árabes
+      </div>
+      <div class="flag-container">
+        <div class="flag japan">
+          <div class="circle"></div>
+        </div>
+        Japón
+      </div>
+    </section>
+  </body>
+</html>
